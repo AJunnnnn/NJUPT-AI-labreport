@@ -1,0 +1,18 @@
+import numpy as np
+
+a = np.random.randint(0, 100, 9)
+b = np.random.randint(0, 100, 9)
+print("初始的a和b:")
+print(a)
+print(b)
+a = a.reshape(3, 3)
+b = b.reshape(3, 3)
+print("变换后的a和b:")
+print(a)
+print(b)
+c = np.vstack((a, b))
+print("按列合并：")
+print(c)
+d = np.hstack((a, b))
+print("按行合并：")
+print(d)
